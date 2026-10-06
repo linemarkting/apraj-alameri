@@ -7,22 +7,17 @@
     <!-- Google Site Verification (placeholder) -->
     <meta name="google-site-verification" content="your-verification-code" />
    
-    <!-- Google tag (gtag.js) - الحملة الأولى -->
+    <!-- Google tag (gtag.js) - NEW CODE -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17850239410"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'AW-17850239410');
     </script>
 
-    <!-- Google tag (gtag.js) - الحملة الثانية -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18448896306"></script>
-    <script>
-      gtag('config', 'AW-18448896306');
-    </script>
-
-    <!-- Event snippet for نقرة صادرة إلى الخارج (2) conversion page - الحملة الأولى -->
+    <!-- Event snippet for نقرة صادرة إلى الخارج (1) conversion page - NEW CODE -->
     <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -31,23 +26,7 @@
         }
       };
       gtag('event', 'conversion', {
-          'send_to': 'AW-17850239410/Kt-ACOSauYkdELKT1L9C',
-          'event_callback': callback
-      });
-      return false;
-    }
-    </script>
-
-    <!-- Event snippet for نقرة صادرة إلى الخارج (1) conversion page - الحملة الثانية -->
-    <script>
-    function gtag_report_conversion_2(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-18448896306/qI-CCNDXnZMdELKij91E',
+          'send_to': 'AW-17850239410/rrZcCLmOnYkdELKT1L9C',
           'event_callback': callback
       });
       return false;
@@ -1077,8 +1056,8 @@
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            if (typeof gtag_report_conversion_2 === 'function') {
-                gtag_report_conversion_2();
+            if (typeof gtag_report_conversion === 'function') {
+                gtag_report_conversion();
             }
             alert('شكراً لتواصلكم مع كهربائي الكويت! سيتم الاتصال بكم فوراً لتقديم استشارة مجانية.');
             this.reset();
